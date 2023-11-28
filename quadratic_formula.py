@@ -1,9 +1,6 @@
-a = 1
-b = -6
-c = 9
+coefficients = [(1, -6, 9), (1, 2, -8), (8, -6, -35), (1, 0, 1)]
 
-# TODO
-x1 = ...
-x2 = ...
-
-print(x1, x2)
+for a, b, c in coefficients:
+    x1 = (-b+((b**2-4*a*c)**0.5))/(2*a)
+    x2 = (-b-((b**2-4*a*c)**0.5))/(2*a)
+    print(f"x={x1}, {x2} (a={a}, b={b}, c={c})")
