@@ -5,6 +5,8 @@ b = int(input("bの値を入力: "))
 for x in (a, b):
     if x == 1:
         print(f"{x}は素数ではありません")
+    elif x == 2:
+        print(f"{x}は素数です")
     else:
         for i in range (2, x):
             if x % i == 0:

@@ -9,5 +9,4 @@ while True:
         print(f"最大公約数は{b}です")
         break
     else:
-        a = b
-        b = r
+        a, b = b, r

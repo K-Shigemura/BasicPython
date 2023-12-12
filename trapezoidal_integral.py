@@ -10,6 +10,6 @@ b =  pi/2
 S = 0
 h = (b - a) / N
 for i in range(N):
-    S += (sin(a + i * h) + sin(a + (i + 1))) * h / 2
+    S += (sin(a + i * h) + sin(a + (i + 1) * h)) * h / 2
 
 print(S)
